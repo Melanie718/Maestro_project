@@ -147,6 +147,7 @@ section.tarif {
   margin-top: 50px;
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 section.tarif .cardtarif {
   display: flex;
@@ -154,14 +155,44 @@ section.tarif .cardtarif {
   align-items: center;
   border-radius: 30%;
   padding: 50px;
-  box-shadow: 0 0 10px grey;
+  box-shadow: 0 0 10px #eeedbd;
   width: 15%;
+  background-color: #f0e4a3;
 }
 section.tarif .cardtarif:first-of-type {
   margin-right: 15px;
+  background-color: #e8e9b1;
 }
 section.tarif .cardtarif:last-of-type {
   margin-left: 15px;
+  background-color: #e9d88e;
+}
+
+section.dl {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+button.dl {
+  padding: 10px;
+  border-radius: 10px;
+  border: outset 2px #c4c4c4;
+  background-color: #ff926b;
+  font-weight: bold;
+  font-size: 25px;
+  transition-property: font-size, background-color, box-shadow;
+  transition-duration: 0.2s;
+  outline: none;
+  box-shadow: 0 0 20px #858585;
+  margin: 0 auto;
+}
+
+button.dl:hover {
+  font-size: 30px;
+  background-color: #9aff86;
+  box-shadow: 0 0 20px #96ffa2;
+  cursor: pointer;
 }
 
 @media (max-width: 850px) {
@@ -187,24 +218,18 @@ section.tarif .cardtarif:last-of-type {
   }
 }
 @media (max-width: 1400px) {
+  section.tarif {
+    flex-direction: column;
+    align-items: center;
+  }
+  section.tarif .cardtarif {
+    width: 25%;
+    margin-bottom: 20px;
+  }
+
   nav p a {
     font-size: 10px;
   }
 }
-/*
-@media (max-width:1310px){
-    header nav p a{
-        font-size:80%;
-    }
-    header img{
-        width:250px;
-    }
-}
-
-@media (max-width:1000px){
-    header nav p a{
-        font-size:50%;
-    }
-} */
 
 /*# sourceMappingURL=visiteur.css.map */
