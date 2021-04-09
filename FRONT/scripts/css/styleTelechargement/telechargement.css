@@ -1,0 +1,55 @@
+body{
+    background-image: url(../../../assets/images/imgInscriptionConnexion/fond.svg);
+    background-position: center;
+    background-repeat: repeat;
+    background-color: black;
+    background-size: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0 0 0;
+    font-style: color red;
+}
+
+main{
+    width: 75%;
+    background: white;
+    box-shadow: 0px 0px 20px white;
+    border-radius:6px;
+    display:flex;
+    align-items:center;
+    padding:50px 0px 50px 0px;
+    flex-direction:column;
+    min-width: 500px;
+    
+}
+
+header img{
+    width: 400px;
+    margin: 0 0 50px 0;
+}
+title{
+    width: 400px;
+    margin: 0 0 50px 0;
+}
+h2{
+    display: flex;
+    justify-content: center;
+}
+h1{
+    display: flex;
+    justify-content: center;
+}
+button{
+    width: 50%;
+    height: 80%;
+    margin: 10%;
+    margin: 20px;
+}
+header{
+
+    display: flex;
+    flex-direction:column;
+    align-items:center; 
+    justify-content: center;
+}

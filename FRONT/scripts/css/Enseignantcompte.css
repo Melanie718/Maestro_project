@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap%22");
+* {
+  font-family: "Comfortaa", cursive;
+}
+
+body{
+    background-image: url(../../assets/images/imgEnseignant/fond.svg);
+    background-position: center;
+    background-repeat: repeat;
+    background-color: black;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0 0 0;
+}
+
+main{
+    width: 75%;
+    background: white;
+    box-shadow: 0px 0px 20px white;
+    border-radius:6px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding:50px 0px 50px 0px;
+    min-width: 500px;
+}
+
+header img{
+    width: 400px;
+    margin: 0 0 50px 0;
+}
+
+.profil{
+    display:flex;
+    width: 50%;
+    border:solid black 2px;
+    border-radius:20px;
+    padding:20px 0 ;
+}
+
+
+.profil > section:first-of-type{
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+
+    margin: 0 20px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.profil > section:first-of-type > img{
+    width:100%;
+}
+
+.profil > section:last-of-type{
+    display:flex;
+    flex-direction: column;
+    justify-content:space-around;
+
+
+    margin-right: 40px; 
+    flex-grow: 3;
+    flex-shrink: 3;
+    flex-basis: 0;
+}
+
+.profil > section:last-of-type > div{
+    display:flex;
+    
+}
+
+.profil > section:last-of-type > div > h4{
+    margin:0;
+    flex-grow:2;
+    flex-shrink:2;
+    flex-basis:0;
+
+    padding: 6px;
+    background:rgb(175, 175, 175);
+    border-radius:15px 0 0 15px;
+}
+
+.profil > section:last-of-type > div > p{
+    margin:0;
+
+    flex-grow:3;
+    flex-shrink:3;
+    flex-basis:0;
+
+    padding: 6px;
+    background:rgb(213, 213, 213);
+    border-radius:0 15px 15px 0;
+}
