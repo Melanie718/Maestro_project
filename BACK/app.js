@@ -11,7 +11,7 @@ const LogUtilities = require('./utilities/logUtilities');
 // ICI ON IMPORTE LES CLASSES
 
 const app = express();
-const port = 3000; //   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   a DETERMINER
+const port = 3007; //   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   a DETERMINER
 
 app.use(bodyParser.json());
 app.use(cors());

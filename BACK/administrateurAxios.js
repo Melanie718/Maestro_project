@@ -1,4 +1,4 @@
-let url = 'http://localhost:3000'; // A DETERMINER
+let url = 'http://localhost:3007'; // A DETERMINER
 const estRemplis = (elem) => elem.value!="";
 
 //  .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   //
