@@ -3,26 +3,25 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
 
-$bg-primary: black;
+$bg-primary: #dac8ad;
 $bg-secondary: white;
 
 *{
     font-family: 'Comfortaa', cursive;
 }
 
-
 body{
-    background-image: url(../../../assets/images/ImgVisiteur/fond.svg);
-    background-position:center;
+    background-image: url(../../../assets/images/ImgVisiteur/3fond.svg);
+    background-position:left right;
     background-repeat: repeat;
     background-color: $bg-primary;
+    background-size: 100%;
     display:flex;
     flex-direction:column;
     padding:100px 0 0 0;
     height:1000px;
-    max-width:1000000px;
-    min-width: 650px;
-
+    padding:0;
+    margin: 100px 0 0 0;
     align-items:center;
 }
 
@@ -42,6 +41,9 @@ header{
         width:500px;
         margin:20px 0 40px 40px;
     }
+
+    
+
     nav{
         flex-grow:1;
         flex-shrink:1;
@@ -80,6 +82,9 @@ section.clsVisiteurVideo{
     width: 100%;
     display:flex;
     justify-content:center;
+    border-top:solid 4px black;
+    border-bottom:solid 4px black;
+    background-color: rgb(181, 181, 181);
     video{
         width:75%;
     }
@@ -107,12 +112,55 @@ section.clsVisiteurVideo{
         align-items:center;
         width: 350px;
         border-radius:30px;
-        box-shadow: 0px 0px 10px black;
-        
+        box-shadow: 0px 0px 20px rgb(133, 133, 133);
+
+        transition: padding 0.4s;
+        &:hover{
+            padding:10px;
+        }
+
+        h1{
+            font-size:30px;
+        }
+        img{
+            width:120px;
+            height:120px;
+        }
         p{
             margin:40px;
             text-align: justify;
         } 
+    }
+}
+
+@media (max-width: 850px){
+    main{
+        width:100%;
+    }
+    header{
+        flex-direction:column;
+        img{
+            align-self:center;
+        }
+    }
+}
+
+@media (max-width:1000px){
+    section.clsVisiteurVideo{
+        video{
+            width:100%;
+        }
+    }
+    .clsVisiteurCards{
+        flex-direction:column;
+        align-items:center;
+    }
+}
+
+@media (max-width:1400px){
+    
+    nav p a{
+        font-size:10px;
     }
 }
 
