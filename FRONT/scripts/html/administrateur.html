@@ -4,11 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/administrateur.css" rel="stylesheet">
     <title>Maestro administrateur</title>
 </head>
 <body>
-    
+    <h1>GESTON DES COMPTES</h1>
+<div class="clsCompte" id="idApprenantContainer">
+    <h2>APPRENANTS</h2>
+    <div class="clsListe" id="idApprenantListe">
+        <h3>Liste des apprenants</h3>
+    </div>
+    <div class="clsCreation" id="idApprenantInput">
+        <h3>Créer un apprenant</h3>
+        <label for="apprenantNom">Nom</label>
+        <input type="text" id="apprenantNom" placeholder="nom"><br>
+        <label for="apprenantPrenom">Prenom</label>
+        <input type="text" id="apprenantPrenom" placeholder="prenom"><br>
+        <label for="apprenantPseudo">Pseudo</label>
+        <input type="text" id="apprenantPseudo" placeholder="pseudo"><br>
+        <label for="apprenantMail">Mail</label>
+        <input type="text" id="apprenantMail" placeholder="mail"><br>
+        <label for="apprenantMdp">Mot de passe</label>
+        <input type="text" id="apprenantMdp" placeholder="mot de passe"><br>
+        <label for="apprenantAge">Age</label>
+        <input type="text" id="apprenantAge" placeholder="age"><br>
+        <label for="apprenantGenre">Genre</label>
+        <input type="text" id="apprenantGenre" placeholder="genre"><br><br>
 
+        <button onclick="creerApprenant()">CREER</button>
+    </div>
+</div><br>
+
+<div class="clsCompte" id="idEnseignantContainer">
+    <h2>ENSEIGNANTS</h2>
+    <div class="clsListe" id="idEnseignantListe">
+        <h3>Liste des Enseignants</h3>
+    </div>
+    <div class="clsCreation" id="idEnseignantInput">
+        <h3>Créer un enseignant</h3>
+        <label for="enseignantNom">Nom</label>
+        <input type="text" id="enseignantNom" placeholder="nom"><br>
+        <label for="enseignantPrenom">Prenom</label>
+        <input type="text" id="enseignantPrenom" placeholder="prenom"><br>
+        <label for="enseignantPseudo">Pseudo</label>
+        <input type="text" id="enseignantPseudo" placeholder="pseudo"><br>
+        <label for="enseignantMail">Mail</label>
+        <input type="text" id="enseignantMail" placeholder="mail"><br>
+        <label for="enseignantMdp">Mot de passe</label>
+        <input type="text" id="enseignantMdp" placeholder="mot de passe"><br>
+
+        <button onclick="creerEnseignant()">CREER</button>
+    </div>
+</div>
 
 
 
@@ -20,10 +67,11 @@
 
     <!-- CODE JS AU DESSUS DE CES LIGNES -->
     <script src="../../../BACK/beans/Apprenant.js"></script>
+    <script src="../../../BACK/beans/Enseignant.js"></script>
 
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="../../../BACK/axios.js"></script>
+    <script src="../../../BACK/administrateurAxios.js"></script>
     
 </body>
 </html>
