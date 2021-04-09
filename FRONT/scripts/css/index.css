@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap");
+*
+{
+  font-family: "Comfortaa", cursive;
+}
+footer{
+    flex-shrink: 0;
+  
+    width: 100%;
+    background: #000000;
+    color: rgb(255, 255, 255);
+    position: relative;
+  
+  }
+  
+  ul{
+    list-style: none;
+    padding: 0%;
+  }
+  
+  .bloc {
+    width: 25%;
+    margin: 0 30px;
+  }
+  
+  /*vignette app*/
+  
+  .app{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding-bottom: 50px;
+  }
+  
+  .vignette{
+    width: 200px;
+  }
+  
+  
+  /*service*/
+  .footer-services h3{
+    font-size: 25px;
+    padding-bottom: 20px;
+  }
+  
+  .footer-services p {
+    padding: 5px 0;
+  }
+  
+  /*contact*/
+  
+  .footer-contacts  h3 {
+    font-size: 25px;
+    padding-bottom: 20px;
+  }
+  
+  .footer-contacts p {
+    padding: 5px 0;
+  }
+  
+  
+  
+  .liste-services li{
+    padding: 2px 0;
+  }
+  
+  .a:hover{
+    color: rgb(3, 3, 3);
+  }
+  
+  .image {
+    font-size: 30px;
+    width: 25px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    transition-property: opacity, width;
+    transition-duration: 0.4s;
+  }
+  
+  .image:hover {
+      opacity: 0.7;
+      width:40px;
+  }
+  
+  .liste-media{
+    width:200px;
+    height:80px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+  }
+  
+  
+  .contenu-footer{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 20px;
+    padding: 50px 0 100px;
+  }
+  
+  
+  
+  

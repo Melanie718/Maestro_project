@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap%22");
+* {
+  font-family: "Comfortaa", cursive;
+}
+
+body{
+    background-image: url(../../assets/images/imgEnseignant/fond.svg);
+    background-position: center;
+    background-repeat: repeat;
+    background-color: #d9caae;
+    background-size: 125%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0 0 0;
+}
+
+main{
+    width: 75%;
+    background: white;
+    box-shadow: 0px 0px 20px white;
+    border-radius:6px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding:50px 0px 50px 0px;
+    min-width: 500px;
+}
+
+header img{
+    width: 400px;
+    margin: 0 0 50px 0;
+}
+
+.profil{
+    display:flex;
+    width: 50%;
+    border:solid black 3px;
+    border-radius:3px;
+    padding:20px 0 ;
+
+    background:#ecdfc5; 
+}
+
+.profil > section:first-of-type{
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+
+    margin: 0 20px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.profil > section:first-of-type > img{
+    width:100%;
+}
+
+.profil > section:last-of-type{
+    display:flex;
+    flex-direction: column;
+    justify-content:space-around;
+
+
+    margin-right: 40px; 
+    flex-grow: 3;
+    flex-shrink: 3;
+    flex-basis: 0;
+}
+
+.profil > section:last-of-type > div{
+    display:flex;
+    
+}
+
+.profil > section:last-of-type > div > h4{
+    margin:0;
+    flex-grow:2;
+    flex-shrink:2;
+    flex-basis:0;
+
+    padding: 8px 6px 6px 12px;
+    background:rgb(233, 233, 233);
+    color: black;
+  /*  border:solid 2px black; */
+    border-right:solid 2px black;
+    border-radius:30px 0 0 30px;
+}
+
+.profil > section:last-of-type > div > p{
+    margin:0;
+
+    flex-grow:3;
+    flex-shrink:3;
+    flex-basis:0;
+
+    padding: 6px;
+    background:rgb(255, 255, 255);
+    border-radius:0 15px 15px 0;
+}
+
+.soon{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    margin:40px;
+}
+
+.soon > p{
+    margin:0 0 0 10px;
+    font-size: 20px;
+}
+
+.add{
+    border-radius:20px;
+    padding: 2 0px;
+
+    height:150px;
+    width:150px;
+
+    background-color:rgb(184, 184, 184);
+    border:solid 2px rgb(216, 216, 216);
+    color:rgb(0, 0, 0);
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+
+.add:hover{
+    cursor: not-allowed;
+}
+
+.add > img{
+    width:50px;
+    height:50px;
+}
+
+.add > p{
+    margin:5px 0 0 0;
+    color:rgb(216, 216, 216);
+    font-weight: bold;
+}

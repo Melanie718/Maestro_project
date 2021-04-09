@@ -24,13 +24,14 @@ function creerUtilisateur(event) {
         console.log(nom, prenom, pseudo, email, mdp, type)
 
 
-        axios.post(`${url}/creerutilisateur`, { nom, prenom, pseudo, email, mdp, type } /* On entre les inputs et on les rentre dans l'equivalent du body */).then(function (reponse) {
-            console.log(reponse.data.type)
-            if (reponse.data.type === 'APPRENTI') {
-                //location.href=''
+        axios.post(`${url}/creerutilisateur`, { nom, prenom, pseudo, email, mdp, type } /* On entre les inputs et on les rentre dans l'equivalent du body */)
+        .then(function (response) {
+            console.log("REPONSE",response.data.type)
+            if (response.data.type === 'Apprenti') {
+                window.location.href="telecharement.html";
                 console.log(user);
-            } else if (response.data.type === 'ENSEIGNANT') {
-                //location.href=''
+            } else if (response.data.type === 'Enseignant') {
+                window.location.href="Enseignantcompte.html";
                 console.log("enseignant" + user);
             }
             // location.href='./comptecree.html'
