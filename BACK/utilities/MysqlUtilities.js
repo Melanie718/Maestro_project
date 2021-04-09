@@ -12,6 +12,31 @@ const config =
 
 class MysqlUtilities
 {
+    
+    //  .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   //
+    //                                  INSCRIPTION                                  //
+    //  .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   //
+    creerApprenantInsciption(user,callback) {
+
+        let connection = mysql.createConnection(config);
+        connection.connect();
+        connection.query("INSERT INTO `apprenant` (`nom`, `prenom`, `pseudo`, `mail`, `mdp`) VALUES (?, ?, ?, ?, ?)", [user.nom, user.prenom, user.pseudo, user.email, user.mdp], (error, result) => {
+            callback(result, error)
+        })
+
+        connection.end;
+    }
+
+    creerEnseignantInsciption(user,callback) {
+
+        let connection = mysql.createConnection(config);
+        connection.connect();
+        connection.query("INSERT INTO `enseignant` (`nom`, `prenom`, `pseudo`, `mail`, `mdp`) VALUES (?, ?, ?, ?, ?)", [user.nom, user.prenom, user.pseudo, user.email, user.mdp], (error, result) => {
+            callback(result, error)
+        })
+
+        connection.end;
+    }
     //  .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   //
     //                                  APPRENANTS                                  //
     //  .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   //

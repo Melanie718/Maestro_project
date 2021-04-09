@@ -6,11 +6,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maestro visiteur</title>
+    <link rel="stylesheet" href="../css/styleVisiteur/visiteur.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body>
-    
+    <main>
+        <header>
+            <div></div>
+            <img class="animate__animated animate__bounce" src="../../assets/images/ImgVisiteur/logo.svg" alt="">
+            <nav>
+                 <p><a href="./connexionInscription.html">S'inscrire / Se connecter</a></p> <!--   TEMPORAIRE POUR BACKUP   -->
+            </nav>
+        </header>
+        
+
+        <section class="clsVisiteurVideo">
+            <video controls width="100%" src="../../assets/videos/MAESTRO VIDEO.mp4"></video>
+        </section>
+
+        <section class="clsVisiteurCards">
+            <div></div>
+            <div class="animate__animated animate__backInLeft clsVisiteurCard">
+                <h1> Apprenti</h1>
+                <img src="../../assets/images/ImgVisiteur/iconeApprenti.svg" alt="">
+                <p>
+                </p>
+            </div>
+            <div class="hr"></div>
+            <div class="animate__animated animate__backInRight clsVisiteurCard">
+                <h1> Enseignant</h1>
+                <img src="../../assets/images/ImgVisiteur/iconeProf.svg" alt="">
+                <p>
+                </p>
+            </div>
+            <div></div>
+        </section>
+        
 
 
+        <section class="avis">
+             
+        </section>
+
+    </main>
+    <footer>
+            
+    </footer> 
 
 
 
@@ -20,6 +61,6 @@
 
     <!-- CODE JS AU DESSUS DE CES LIGNES -->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="../../../BACK/axios.js"></script>
+    <script src="../../../BACK/visiteurAxios.js"></script>
 </body>
 </html>

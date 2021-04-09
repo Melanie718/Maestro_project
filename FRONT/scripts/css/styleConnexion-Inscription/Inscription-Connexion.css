@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap%22");
+* {
+  font-family: "Comfortaa", cursive;
+}
+
+
+body{
+    background-image: url(../../../assets/images/imgInscriptionConnexion/fond.svg);
+    background-position: center;
+    background-repeat: repeat;
+    background-color: black;
+    background-size: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0 0 0;
+}
+
+main{
+    width: 75%;
+    background: white;
+    box-shadow: 0px 0px 20px white;
+    border-radius:6px;
+    display:flex;
+    align-items:center;
+    padding:50px 0px 50px 0px;
+    flex-direction:column;
+    min-width: 500px;
+}
+
+header img{
+    width: 400px;
+    margin: 0 0 50px 0;
+}
+
+section{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    min-width: 1000px;
+}
+
+form{
+    width:25%;
+    background-color: rgb(255, 255, 255);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+form:last-of-type{
+    border-left:solid black 2px;
+}
+form:first-of-type{
+    margin: 0 0 0 0;
+}
+
+.clsInscriptionForm{
+    display: flex;
+    flex-direction:column;
+    align-items:flex-start;
+    margin: 4px 0 4px 0;
+}
+
+input{
+    padding:5px;
+    outline:none;
+    width:200px;
+}
+
+.clsInscriptionBtn{
+    margin: 20px 0px 0px 0px;
+    border:none;
+    border-radius:20px;
+    width:125px;
+    background-color: #49a498;
+    color: white;
+    transition-property: background-color, width;
+    transition-duration: 0.4s;
+}
+
+.clsInscriptionBtn:hover{
+    width:140px;
+    
+    background-color: #32776e;
+}
+
+
+
+select {
+    padding:5px;
+    font-size: 15px;
+    display: flex;
+    width:216px;
+}

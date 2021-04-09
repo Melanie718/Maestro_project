@@ -8,6 +8,8 @@ const { body,check,param ,validationResult,checkSchema  } = require('express-val
 const MysqlUtilities = require('./utilities/MysqlUtilities');
 const LogUtilities = require('./utilities/logUtilities');
 
+const Utilisateur = require('./beans/Utilisateur');
+
 // ICI ON IMPORTE LES CLASSES
 
 const app = express();
@@ -16,6 +18,40 @@ const port = 3007; //   .   .   .   .   .   .   .   .   .   .   .   .   .   .   
 app.use(bodyParser.json());
 app.use(cors());
 
+//  .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   //
+//                                  UTILISATEUR                                  //
+//  .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   //
+app.post('/creerutilisateur', (req, res) =>
+{
+    let user = new Utilisateur(req.body.nom, req.body.prenom, req.body.pseudo, req.body.email, req.body.mdp, req.body.type)
+
+    console.log(user)
+    if (user.type === "Apprenti")
+    {
+        MysqlUtilities.creerApprenantInsciption(user,(result, error) => {
+            if (!error) {
+                user.id = result.insertId
+                res.send(user)
+            } else {
+                res.status(500).send(error)
+            }
+        } )
+    }
+    else if (user.type === "Enseignant")
+    {
+        MysqlUtilities.creerEnseignantInsciption(user,(result, error) => {
+            if (!error) {
+                user.id = result.insertId
+                res.send(user)
+            } else {
+                res.status(500).send(error)
+            }
+        })
+    }
+
+
+
+});
 //  .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   //
 //                                  APPRENANTS                                  //
 //  .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   //
