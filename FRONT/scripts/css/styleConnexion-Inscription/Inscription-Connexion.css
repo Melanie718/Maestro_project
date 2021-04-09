@@ -25,6 +25,7 @@ main{
     align-items:center;
     padding:50px 0px 50px 0px;
     flex-direction:column;
+    min-width: 500px;
 }
 
 header img{
@@ -36,6 +37,7 @@ section{
     width:100%;
     display:flex;
     justify-content:center;
+    min-width: 1000px;
 }
 
 form{
