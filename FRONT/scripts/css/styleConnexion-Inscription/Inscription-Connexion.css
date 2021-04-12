@@ -8,7 +8,7 @@ body{
     background-image: url(../../../assets/images/imgInscriptionConnexion/fond.svg);
     background-position: center;
     background-repeat: repeat;
-    background-color: black;
+    background-color: #d9caae;
     background-size: 75%;
     display: flex;
     flex-direction: column;
