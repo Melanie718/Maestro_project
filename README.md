@@ -39,4 +39,7 @@ const config =
     database : 'user7' // ICI
 };
 
-Une fois cela fait, vous pouvez lancer la page visiteur en local! =]HF
+Une fois que cela est fait, vous devez ouvrir un terminal sur le projet et lancer l'application en vous positionnant sur le BACK avec la
+ligne de commande "cd yazemmeb_maestro/BACK", puis en tapant la ligne de commande "node app.js"
+
+Une fois cela fait, vous pouvez lancer la page visiteur en local! =] HF
