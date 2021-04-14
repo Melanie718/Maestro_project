@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/styleConnexion-Inscription/Inscription-Connexion.css">
+    <title>Maestro - Inscription</title>
+</head>
+<body>
+    <main>
+
+        <section>
+            <form>
+
+                <h1>Connexion</h1>
+
+                <div class="clsInscriptionForm">  
+                    <label for="imput1"> Identifiant</label>
+                    <input type="text" id="idConnexionMail" name="imput1" placeholder="pseudo" >
+                </div>
+                <div class="clsInscriptionForm">
+                    <label for="imput2">Mot de passe</label>
+                    <input type="text" id="idConnexionMdp" name="imput2" placeholder="mot de passe" >
+                </div>
+                <input class="clsInscriptionBtn" type="button" id="bouton" value="Se connecter" onclick="connectionEnseignant()">
+            </form>
+            <form id="formInscription">
+                <h1>Inscription</h1>
+
+                <div class="clsInscriptionForm">  
+                    <label for="imput1"> Nom</label>
+                    <input type="text" id="idInscriptionNom" name="imput1">
+                </div>
+                <div class="clsInscriptionForm">
+                    <label for="imput2">Prénom</label>
+                    <input type="text" id="idInscriptionPrenom" name="imput2">
+                </div>
+                <div class="clsInscriptionForm">
+                    <label for="imput3">Pseudo</label>
+                    <input type="text" id="idInscriptionPseudo" name="imput3">
+                </div>
+                <div class="clsInscriptionForm">
+                    <label for="imput4">Mot de passe</label>
+                    <input type="password" id="idInscriptionMdp" name="imput4">
+                </div>
+                <div class="clsInscriptionForm">
+                    <label for="imput5">E-Mail</label>
+                    <input type="text" id="idInscriptionMail" name="imput5">
+                </div>
+                <div class="clsInscriptionForm">
+        
+                    <label for="imput6">Vous êtes:</label>
+        
+                    <select name="imput6" id="idInscriptionRole">
+                        <option value="">---</option>
+                        <option value="Apprenti">Apprenti</option>
+                        <option value="Enseignant">Enseignant</option>
+                    </select>
+
+                </div>
+
+                <button class="clsInscriptionBtn" type="button" id="idInscriptionBtnValider" value="S'inscrire" onclick="creerUtilisateur(event)">S'inscrire</button>
+            </form>
+
+
+        </section>
+        
+    </main>
+
+    <!-- HEADER -->
+    <script src="../javascript/header.js" defer></script>
+    <!-- FOOTER -->
+    <script src="../javascript/footer.js" defer></script>
+
+    <!-- BEANS -->
+    <script src="../../../BACK/beans/Apprenant.js"></script>
+    <script src="../../../BACK/beans/Enseignant.js"></script>
+    <script src="../../../BACK/beans/Utilisateur.js"></script>
+    
+    <!-- AXIOS -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../../../BACK/axios/axiosVariables.js"></script>
+    <script src="../../../BACK/axios/inscriptionAxios.js"></script>
+    <script src="../../../BACK/axios/connectionAxios.js"></script>
+</body>
+</html>

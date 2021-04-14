@@ -4,22 +4,78 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index.css">
+    <link href="../css/administrateur.css" rel="stylesheet">
     <title>Maestro administrateur</title>
 </head>
 <body>
+    <main>
+        <h1>GESTON DES COMPTES</h1>
+        <div class="clsCompte" id="idApprenantContainer">
+            <h2>APPRENANTS</h2>
+            <div class="clsListe" id="idApprenantListe">
+                <h3>Liste des apprenants</h3>
+            </div>
+            <div class="clsCreation" id="idApprenantInput">
+                <hr>
+                <h3>Créer un apprenant</h3>
+                <label for="apprenantNom">Nom</label>
+                <input type="text" id="apprenantNom" placeholder="nom"><br>
+                <label for="apprenantPrenom">Prenom</label>
+                <input type="text" id="apprenantPrenom" placeholder="prenom"><br>
+                <label for="apprenantPseudo">Pseudo</label>
+                <input type="text" id="apprenantPseudo" placeholder="pseudo"><br>
+                <label for="apprenantMail">Mail</label>
+                <input type="text" id="apprenantMail" placeholder="mail"><br>
+                <label for="apprenantMdp">Mot de passe</label>
+                <input type="text" id="apprenantMdp" placeholder="mot de passe"><br>
+                <label for="apprenantAge">Age</label>
+                <input type="text" id="apprenantAge" placeholder="age"><br>
+                <label for="apprenantGenre">Genre</label>
+                <input type="text" id="apprenantGenre" placeholder="genre"><br><br>
+        
+                <button onclick="creerApprenant()">CREER</button>
+            </div>
+        </div>
+        
+        <div class="clsCompte" id="idEnseignantContainer">
+            <h2>ENSEIGNANTS</h2>
+            <div class="clsListe" id="idEnseignantListe">
+                <h3>Liste des Enseignants</h3>
+            </div>
+            <div class="clsCreation" id="idEnseignantInput">
+                <hr>
+                <h3>Créer un enseignant</h3>
+                <label for="enseignantNom">Nom</label>
+                <input type="text" id="enseignantNom" placeholder="nom"><br>
+                <label for="enseignantPrenom">Prenom</label>
+                <input type="text" id="enseignantPrenom" placeholder="prenom"><br>
+                <label for="enseignantPseudo">Pseudo</label>
+                <input type="text" id="enseignantPseudo" placeholder="pseudo"><br>
+                <label for="enseignantMail">Mail</label>
+                <input type="text" id="enseignantMail" placeholder="mail"><br>
+                <label for="enseignantMdp">Mot de passe</label>
+                <input type="text" id="enseignantMdp" placeholder="mot de passe"><br><br>
+        
+                <button onclick="creerEnseignant()">CREER</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- HEADER -->
+    <script src="../javascript/header.js" defer></script>
+    <!-- FOOTER -->
+    <script src="../javascript/footer.js" defer></script>
     
+    <!-- BEANS -->
+    <script src="../../../BACK/beans/Apprenant.js"></script>
+    <script src="../../../BACK/beans/Enseignant.js"></script>
+    <script src="../../../BACK/beans/Utilisateur.js"></script>
 
-
-
-
-
-
-
-    <!-- CODE HTML AU DESSUS DE CES LIGNES -->
-
-
-    <!-- CODE JS AU DESSUS DE CES LIGNES -->
+    <!-- AXIOS -->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="../../../BACK/axios.js"></script>
+    <script src="../../../BACK/axios/axiosVariables.js"></script>
+    <script src="../../../BACK/axios/administrateurAxios.js"></script>
+    
 </body>
 </html>

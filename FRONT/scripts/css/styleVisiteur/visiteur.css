@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap");
+* {
+  font-family: "Comfortaa", cursive;
+}
+
+body {
+  background-image: url(../../../assets/images/ImgVisiteur/3fond.svg);
+  background-position: left right;
+  background-repeat: repeat;
+  background-color: #dac8ad;
+  background-size: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 100px 0 0 0;
+  height: 1000px;
+  padding: 0;
+  margin: 100px 0 0 0;
+  align-items: center;
+}
+
+main {
+  min-width: 80px;
+  width: 75%;
+  background: white;
+  box-shadow: 0px 0px 20px black;
+}
+
+section.clsVisiteurVideo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-top: solid 4px black;
+  border-bottom: solid 4px black;
+  background-color: #b5b5b5;
+}
+section.clsVisiteurVideo video {
+  width: 75%;
+}
+
+.clsVisiteurCards {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+.clsVisiteurCards div:first-of-type, .clsVisiteurCards div:last-of-type {
+  flex-grow: 6;
+  flex-shrink: 6;
+  flex-basis: 0;
+}
+.clsVisiteurCards .hr {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+}
+.clsVisiteurCards .clsVisiteurCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+  border-radius: 30px;
+  box-shadow: 0px 0px 20px #858585;
+  transition: padding 0.4s;
+}
+.clsVisiteurCards .clsVisiteurCard:hover {
+  padding: 10px;
+}
+.clsVisiteurCards .clsVisiteurCard h1 {
+  font-size: 30px;
+}
+.clsVisiteurCards .clsVisiteurCard img {
+  width: 120px;
+  height: 120px;
+}
+.clsVisiteurCards .clsVisiteurCard p {
+  margin: 40px;
+}
+
+section.avis {
+  margin-top: 100px;
+  border-top: solid black 2px;
+  border-bottom: solid black 2px;
+  padding: 8px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section.avis div.avis {
+  width: 75%;
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+section.avis div.avis img {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+  border: solid 3px black;
+  border-radius: 100%;
+  width: 15%;
+  height: 15%;
+  margin-right: 5%;
+}
+section.avis div.avis div {
+  flex-grow: 9;
+  flex-shrink: 9;
+  flex-basis: 0;
+}
+
+section.tarif {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+section.tarif .cardtarif {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  padding: 50px;
+  box-shadow: 0 0 10px #eeedbd;
+  width: 15%;
+  background-color: #f0e4a3;
+}
+section.tarif .cardtarif:first-of-type {
+  margin-right: 15px;
+  background-color: #e8e9b1;
+}
+section.tarif .cardtarif:last-of-type {
+  margin-left: 15px;
+  background-color: #e9d88e;
+}
+
+section.dl {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+button.dl {
+  padding: 10px;
+  border-radius: 10px;
+  border: outset 2px #c4c4c4;
+  background-color: #ff926b;
+  font-weight: bold;
+  font-size: 25px;
+  transition-property: font-size, background-color, box-shadow;
+  transition-duration: 0.2s;
+  outline: none;
+  box-shadow: 0 0 20px #858585;
+  margin: 0 auto;
+}
+
+button.dl:hover {
+  font-size: 30px;
+  background-color: #9aff86;
+  box-shadow: 0 0 20px #96ffa2;
+  cursor: pointer;
+}
+
+/*
+@media (max-width:1310px){
+    header nav p a{
+        font-size:80%;
+    }
+    header img{
+        width:250px;
+    }
+}
+
+@media (max-width:1000px){
+    header nav p a{
+        font-size:50%;
+    }
+} */
+
+/*# sourceMappingURL=visiteur.css.map */

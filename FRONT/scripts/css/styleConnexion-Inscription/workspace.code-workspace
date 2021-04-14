@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\..\\..\\..\\..\\formulaire"
+		},
+		{
+			"path": "..\\..\\.."
+		},
+		{
+			"path": "..\\..\\..\\..\\..\\..\\page connection"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "FRONT"
+	}
+}

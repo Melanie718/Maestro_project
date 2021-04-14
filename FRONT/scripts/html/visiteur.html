@@ -1,25 +1,123 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maestro visiteur</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/styleVisiteur/visiteur.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
+
 <body>
+
+
+    <main>
+        <section class="clsVisiteurVideo">
+            <video controls width="100%" src="../../assets/videos/MAESTRO VIDEO.mp4"></video>
+        </section>
     
+        <section class="clsVisiteurCards">
+            <div></div>
+            <div class="animate__animated animate__backInLeft clsVisiteurCard">
+                <h1> Apprenti</h1>
+                <img src="../../assets/images/ImgVisiteur/iconeApprenti.svg" alt="">
+                <p>Avec le compte APPRENANT le solfège deviendra pour vous un jeu d'enfant ! 
+                    Grâce aux mini-leçons ludiques, l'apprentissage est à la portée de tous les âges.
+                    Définissez un objectifs quotidien et restez motivé à mesure que l'appli suit vos progrès.
+                    Remportez des badges quand vous atteignez vos objectifs et déverrouillez de nouveaux niveaux !
+                </p>
+            </div>
+            <div class="hr"></div>
+            <div class="animate__animated animate__backInRight clsVisiteurCard">
+                <h1> Enseignant</h1>
+                <img src="../../assets/images/ImgVisiteur/iconeProf.svg" alt=""> <p>Avec le compte ENSEIGNANT délivrez à tout le monde votre savoir !
+                    Télécharger vos partitions et définissez des niveaux.
+                    Vous aurez l'occasion de suivre vos élèves et de voir leurs progrès pas à pas tout en proposant des exercices ludiques pour leur apprentissage.
+                </p>
+            </div>
+            <div></div>
+        </section>
+        <section class="avis">
+            <div class="avis">
+                <img src="../../assets/images/ImgVisiteur/avis/jean.jpg" alt="">
+                <div>
+                    <h1> Mr. Prénom </h1>
+                    <div></div>
+                    <p> J'adore apprendre à chanter et à lire toutes les notes grâce à Maestro!!!</p>
+                </div>
+           </div>
+            <div class="avis">
+                <img src="../../assets/images/ImgVisiteur/avis/jean.jpg" alt="">
+                <div>
+                    <h1> Mr. Prénom </h1>
+                    <p> J'adore apprendre à chanter et à lire toutes les notes grâce à Maestro!!!</p>
+                </div>
+           </div>
+            <div class="avis">
+                <img src="../../assets/images/ImgVisiteur/avis/jean.jpg" alt="">
+                <div>
+                    <h1> Mr. Prénom </h1>
+                    <p> J'adore apprendre à chanter et à lire toutes les notes grâce à Maestro!!!</p>
+                </div>
+           </div>
+       </section>
+
+       <section class="tarif" >
+           <div class="cardtarif">
+               <h1>FREE</h1>
+               <ul>
+                   <li>2 Niveaux par jour</li>
+                   
+               </ul>
+           </div>
+           <div class="cardtarif">
+               <h1>5€/Mois</h1>
+               <ul>
+                   <li>Pas de limite de niveaux</li>
+                   <li>Tous les skins débloqués</li>
+                   <li>Possibilité de contact des <br>
+                   professeurs en priorité
+                   </li>
+               </ul>
+           </div>
+           <div class="cardtarif">
+               <h1>60€/An</h1>
+               <ul>
+                   <li>Pas de limite de niveaux</li>
+                   <li>Tous les skins débloqués</li>
+                   <li>Possibilité de contact des <br>
+                   professeurs en priorité
+                   </li>
+               </ul>
+           </div>
+       </section>
+       
+       <section class="dl">
+           <button class="dl">Téléchargez!</button>
+       </section>
 
 
 
 
+    </main>
 
 
-    <!-- CODE HTML AU DESSUS DE CES LIGNES -->
 
+    <!-- HEADER -->
+    <script src="../javascript/header.js" defer></script>
+    <!-- FOOTER -->
+    <script src="../javascript/footer.js" defer></script>
 
-    <!-- CODE JS AU DESSUS DE CES LIGNES -->
+    <!-- BEANS -->
+    <script src="../../../BACK/beans/Apprenant.js"></script>
+    <script src="../../../BACK/beans/Enseignant.js"></script>
+    <script src="../../../BACK/beans/Utilisateur.js"></script>
+    
+    <!-- AXIOS -->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="../../../BACK/axios.js"></script>
+    <script src="../../../BACK/axios/axiosVariables.js"></script>
 </body>
 </html>

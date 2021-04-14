@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap%22");
+* {
+  font-family: "Comfortaa", cursive;
+}
+
+
+body{
+    background-image: url('../../../assets/images/ImgVisiteur/3fond.svg');
+    background-position: center;
+    background-repeat: repeat;
+    background-color: #d9caae;
+    background-size: 125%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0 0 0;
+    font-style: color red;
+}
+
+main{
+    width: 75%;
+    background: white;
+    box-shadow: 0px 0px 20px white;
+    border-radius:6px;
+    display:flex;
+    align-items:center;
+    padding:50px 0px 50px 0px;
+    flex-direction:column;
+    min-width: 500px;
+    
+}
+
+header img{
+    width: 400px;
+    margin: 0 0 50px 0;
+}
+
+title{
+    width: 400px;
+    margin: 0 0 50px 0;
+}
+
+
+h2, h1{
+    
+    text-align:center;
+}
+
+button{
+    padding:10px;
+    border-radius: 10px;
+    border:outset 2px rgb(196, 196, 196);
+    background-color:#ff5d22;
+    font-weight: bold;
+    font-size: 25px;
+    transition-property: font-size, background-color, box-shadow;
+    transition-duration: 0.2s;
+    outline:none;
+    box-shadow: 0 0 20px rgb(133, 133, 133);
+}
+
+button:hover{
+    font-size: 30px;
+    background-color:#9aff86;
+    box-shadow: 0 0 20px rgb(150, 255, 162);
+    cursor:pointer;
+}
+
+header{
+    display: flex;
+    flex-direction:column;
+    align-items:center; 
+    justify-content: center;
+}
